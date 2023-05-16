@@ -177,6 +177,16 @@ input {
 
 .tab-content__container-section-1 {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.tab-content__container-section-1 p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 142.61%;
+    color: #000000;
 }
 
 .tab-content__container-section-2 {
@@ -600,7 +610,9 @@ footer {
 .footer-section-2__lis {
     width: 100%;
 }
-
+.w-full{
+    width: 100%;
+}
 .divider-footer {
     height: 84px;
     width: 100%;
@@ -620,6 +632,23 @@ footer {
     line-height: 112.5%;
     letter-spacing: -0.035em;
     color: #333333;
+}
+
+.info-medidas-cards__img {
+    position: relative;
+}
+
+.fondo-blanco-es {
+    color: black !important;
+}
+
+.conted-card-text {
+    background: #000000b3;
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    color: white;
+    padding: 20px;
 }
 
 .right-element .ancho-medio {
@@ -659,6 +688,7 @@ footer {
     text-align: center;
 }
 
+.conted-card-text {}
 
 .initial {
     padding: 20px;
@@ -828,6 +858,29 @@ footer {
 }
 
 
+.style-href {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    border-bottom: 1px solid black;
+    margin-top: 10px;
+    gap: 15px;
+    align-items: center;
+}
+
+.style-href-text {
+    white-space: pre;
+    font-size: 16px !important;
+}
+
+.style-href img {
+    width: 20px;
+    padding-bottom: 1px;
+}
+
+.style-href__center {
+    display: flex;
+}
 
 .point-colors-md {
     width: 28px;
@@ -1016,6 +1069,12 @@ footer {
 
 .info-medidas__container-text div {
     font-size: 20px;
+}
+
+.info-medidas__container-text p {
+    font-size: 22px;
+    line-height: 142.61%;
+    color: #000000;
 }
 
 .info-medidas-cards {
@@ -1475,7 +1534,9 @@ footer {
     margin-bottom: 40px;
 }
 
-.container-servicio_section-2__img {}
+.container-servicio_section-2__img {
+    position: relative;
+}
 
 .container-servicio_section-2__img img {
     width: 100%;
@@ -1560,11 +1621,10 @@ footer {
     text-align: left;
 }
 
-.info-section_item-1_content-text__details-img a {
+.info-section_item-1_content-text__details-img p {
     color: #000000 !important;
     font-weight: 500;
     font-size: 20px;
-    text-decoration: underline;
 }
 
 .rigt-flex-row div {
@@ -2194,8 +2254,14 @@ footer {
     align-items: center;
 }
 
+.cumtono-center-red {
+    justify-content: center !important;
+    background: none !important;
+}
+
 .right-tubos-especiales__container-strong {
     margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .main-home {
@@ -2976,6 +3042,20 @@ footer {
         flex-direction: row;
     }
 
+    .tubos-doble {
+        display: flex;
+        gap: 50px;
+    }
+
+    .tubos-doble-item1 {
+        width: 33%;
+    }
+
+    .tubos-doble-item2 {
+        width: 33%;
+    }
+
+
     .col-2 {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
@@ -3578,8 +3658,8 @@ footer {
 
     .info-section_item-1_content-text__details {
         display: flex;
-        width: 77%;
-        justify-content: flex-start;
+        width: 90%;
+        justify-content: space-around;
         margin-top: 30px;
         gap: 25px;
     }
